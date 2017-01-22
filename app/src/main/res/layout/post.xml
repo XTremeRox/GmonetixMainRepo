@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:padding="5dp"
+        android:textColor="#000000"/>
+
+    <WebView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:scrollbars=""
+        android:layout_above="@+id/id"
+        android:layout_height="wrap_content"
+        android:id="@+id/content" />
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/id"
+        android:layout_above="@+id/date"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/date"
+        android:layout_above="@+id/link"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/slug"
+        android:id="@+id/link"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/slug"
+        android:layout_above="@+id/author"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/author"
+        android:layout_above="@+id/featured_media"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/featured_media"
+        android:layout_above="@+id/comment_status"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/comment_status"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/categories"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/categories"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
